@@ -8,6 +8,7 @@
     clear:none;
     float:left;
     border:1px solid white;
+    position: relative;
 }
 .engine {
     display:inline-block;
@@ -61,13 +62,15 @@
 }
 
 .rounded-nose-cone {
-    margin-left:200px;
-    position:relative;
-    width:220px;
+    width:200px;
     height:200px;
+    /*left:20px;*/
     background:black;
-    -webkit-transform:rotate(0deg);
-    transform:rotate(0deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    border-radius:30px;
+    margin-top:300px;
+    border:none;
 }
 
 /*.arrow-left {*/

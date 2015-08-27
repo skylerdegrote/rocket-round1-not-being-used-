@@ -25,19 +25,17 @@
 
         <div class="mainrocket">
             <div class="half-circle-nose-cone" ng-class="noseCone"></div>
-            <div class="leftfin" ng-click="finPanel()" ng-mouseenter="finDialog()">I am a right triangle</div>
-            <div class="bodyTube" ng-click="bodyTubePanel()" ng-mouseenter="bodyTubeDialog()">
-                <div class="engine" ng-click="enginePanel()" ng-mouseenter="engineDialog()"></div>
+            <div class="leftfin" ng-click="finPanel()">I am a right triangle</div>
+            <div class="bodyTube" ng-click="bodyTubePanel()">
+                <div class="engine" ng-click="enginePanel()"></div>
             </div>
-            <div class="rightfin" ng-click="finPanel()" ng-mouseenter="finDialog()">I am a right triangle</div>
+            <div class="rightfin" ng-click="finPanel()">I am a right triangle</div>
         </div>
 
 
         <div class="half-circle-nose-cone" ng-click="noseCone = 'half-circle-nose-cone'"></div>
         <div class="pointed-nose-cone" ng-click="noseCone = 'pointed-nose-cone'"></div>
-        <!--<div class="cover">-->
-            <div class="rounded-nose-cone" ng-click="noseCone = 'rounded-nose-cone'"></div>
-        <!--</div>-->
+        <div class="rounded-nose-cone" ng-click="noseCone = 'rounded-nose-cone'"></div>        <!--</div>-->
 
 
 
