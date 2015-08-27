@@ -1,31 +1,13 @@
 body {
-    background-image:url('/images/cloudysunsky.jpg')
+    background-image: url('/images/cloudysunsky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 img {
     height:100px;
 }
-
-.pointedNoseCone {
-    background-image:url('/images/rocketpieces_pointed-nose.png')
-}
-
-.roundedNoseCone {
-    background-image:url('/images/rocketpieces_rounded-nose.png')
-}
-
-.halfcircleNoseCone {
-    background-image:url('/images/rocketpieces_halfcircle-nose.png')
-}
-
-.normalFin {
-    background-image:url('/images/rocketpieces_normal-fins.png')
-}
-
-.flatExtendedFin {
-    background-image:url('/images/rocketpieces_flatBottomExtend-fins.png')
-}
-
-.flatFin {
-    background-image:url('/images/rocketpieces_flatbottom-fins.png')
+body.container {
+    width: 1000px;
+    margin: 30px auto;
 }

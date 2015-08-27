@@ -14,15 +14,40 @@
     <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/controller.min.js"></script>
 </head>
-<body>
+<body class="container">
     <div ng-controller="mainRocketController">
 
-        <img ng-class="{pointed: pointedNoseCone}" ng-click="noseConePanel()" ng-mouseenter="noseConeDialog()">
+        <!--<div ng-class="[pointedNoseCone, roundedNoseCone, halfCircleNoseCone]">-->
+        <!--</div>-->
+        <!--<div ng-model="pointedNoseCone"></div>-->
+        <!--<div ng-model="roundedNoseCone"></div>-->
+        <!--<div ng-model="halfCircleNoseCone"></div>-->
+
+        <div class="mainrocket">
+            <div class="half-circle-nose-cone" ng-class="noseCone"></div>
+            <div class="leftfin" ng-click="finPanel()" ng-mouseenter="finDialog()">I am a right triangle</div>
+            <div class="bodyTube" ng-click="bodyTubePanel()" ng-mouseenter="bodyTubeDialog()">
+                <div class="engine" ng-click="enginePanel()" ng-mouseenter="engineDialog()"></div>
+            </div>
+            <div class="rightfin" ng-click="finPanel()" ng-mouseenter="finDialog()">I am a right triangle</div>
+        </div>
 
 
-        <img ng-src="/images/Placeholder.png">
-        <img ng-src="/images/Placeholder.png">
-        <img ng-src="/images/Placeholder.png">
+        <div class="half-circle-nose-cone" ng-click="noseCone = 'half-circle-nose-cone'"></div>
+        <div class="pointed-nose-cone" ng-click="noseCone = 'pointed-nose-cone'"></div>
+        <!--<div class="cover">-->
+            <div class="rounded-nose-cone" ng-click="noseCone = 'rounded-nose-cone'"></div>
+        <!--</div>-->
+
+
+
+    <!--<img ng-src="/images/Placeholder.png" ng-click="noseConePanel()" ng-mouseenter="noseConeDialog()">-->
+
+        <!--<img ng-src="/images/Placeholder.png" ng-click="bodyTubePanel()" ng-mouseenter="bodyTubeDialog()">-->
+
+        <!--<img ng-src="/images/Placeholder.png" ng-click="finPanel()" ng-mouseenter="finDialog()">-->
+
+        <!--<img ng-src="/images/Placeholder.png" ng-click="enginePanel()" ng-mouseenter="engineDialog()">-->
 
     </div>
 
